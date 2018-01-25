@@ -1,0 +1,38 @@
+#main p{
+	/*text-indent: 2em;*/
+}
+
+/*#main p:first-letter{
+	font-size: 2em;
+	font-family: "微软雅黑"；
+
+
+}*/
+#main p span{
+	float: left;
+	width: 1.5em;
+	height: 1em;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 2em;
+	font-family: "微软雅黑"；
+}
+
+img.main_logo{
+	border-radius: 10%;
+	width: 50%;
+	position:absolute;
+	top:1em;
+	left:25%;
+}
+
+#header{
+	position:fixed;
+	ilter:alpha(opacity=60); /*ie滤镜，透明度50%*/
+	-moz-opacity:0.6; /*Firefox私有，透明度50%*/
+	opacity:0.6;/*其他，透明度50%*/
+}
+
+ul.slides{
+	list-style: none;
+}

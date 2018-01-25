@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="css/zhaoxin.css">
+		<title>ISTA招新</title>
+	</head>
+	<body id="zhaoxin">
+		<h1><img src="img/ista_logo.png" alt=""></h1>
+		<h3>学生信息科技协会</h3>
+		<form action="insert.php" method="post" onsubmit="return validate_form()">
+			<fieldset id="mustItem">
+				<label for="name">姓名</label>
+				<input type="text" name="name" id="name" onblur="validate_ele('name')">
+				<label for="cellPhone">手机号码</label>
+				<input type="text" name="cellPhone" id="cellPhone" onblur="validate_ele('cellphone')">
+				<label for="class">班级</label>
+				<input type="text" name="class" id="class" onblur="validate_ele('class')">
+				<div class="buttonWrapper">
+					<button id="btn_moreDetail"><img src="img/btn_1.png" alt=""></button>
+					<button id="btn_submit" type="submit"><img src="img/btn_2.png" alt=""></button>
+					<img src="img/leftArrow.png" alt="" id="leftArrow">
+					<span id="text_moreDetail"># 点击继续，让我们更了解你</span>
+					<img src="img/rightArrow.png" alt="" id="rightArrow">
+					<span id="text_submit"># 不想填了？那剩下的就面试时再告诉我们吧</span>
+				</div>
+				<input type="hidden" name="originator" values="<?php $code ?>">
+			</fieldset>
+			<fieldset id="optionalItem">
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email">
+				<label for="studentId">学号</label>
+				<input type="text" name="studentId" id="studentId">
+				<label for="Apt" id="Apt">希望加入的部门<span>(美编、硬件、应技、摄影、电竞、人资,可多选,用逗号分开)</span></label>
+				<input type="text" name="Apt" id="Apt">
+				<label for="tellUs" id="tellUs">你想对我们说的话?<span>(特长、你想得到什么、自我介绍等)</span></label>
+				<textarea name="tellUs" id="tellUs" cols="10" rows="8"></textarea>
+				<div class="btn_submitWrapper">
+					<button id="btn_submitAll" type="submit"><img src="img/btn_submitAll.png" alt="" ></button>
+					<img src="img/sumbitAllArrow.png" alt="" class="rightArrow" id="submitAllArrow">
+					<span id="text_submitAll"># 我要提交</span>
+				</div>
+			</fieldset>
+		</form>
+		<div class="footer"><span>©2014 ISTA. All rights reserved. </span></div>
+		<img src="img/bg_opt_1.png" alt="" id="opt_bg">
+		<script type="text/javascript" defer="defer" src="js/jquery2_x.js"></script>
+		<script type="text/javascript" defer="defer" src="js/zhaoxin.js"></script>
+	</body>
+</html>

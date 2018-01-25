@@ -1,0 +1,16 @@
+
+    string£º
+    | zhaoxin15 | CREATE TABLE `zhaoxin15` (
+`PersonId` int(10) NOT NULL AUTO_INCREMENT,
+`Name` varchar(255) DEFAULT NULL,
+`CellPhone` varchar(15) DEFAULT NULL,
+`Class` varchar(255) DEFAULT NULL,
+`Email` varchar(255) DEFAULT NULL,
+`StudentId` int(10) DEFAULT NULL,
+`Apt` varchar(255) DEFAULT NULL,
+`SomeElse` tinytext,
+`FinalApt` varchar(255) DEFAULT NULL,
+`TellUs` varchar(500) DEFAULT NULL,
+`mianshi` varchar(20) DEFAULT NULL,
+PRIMARY KEY (`PersonId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 |
